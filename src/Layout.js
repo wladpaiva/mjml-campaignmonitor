@@ -19,6 +19,7 @@ registerDependencies({
     'mj-table',
     'mj-text',
     'mj-navbar',
+    'mj-wrapper',
     'cm-image',
   ],
 })
