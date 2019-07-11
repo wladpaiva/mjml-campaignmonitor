@@ -1,14 +1,15 @@
 {
-  "extends": [
-    "eslint-config-airbnb-base",
-    "eslint-config-airbnb-base/rules/strict"
-  ],
+  "extends": ["airbnb", "plugin:prettier/recommended"],
   "parser": "babel-eslint",
-  "rules": {
-
-    "padded-blocks": 0,
-    "space-before-function-paren": 0,
-    "semi": 0,
-
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
   },
+  "rules": {
+    "import/no-named-as-default-member": "off",
+    "import/no-named-as-default": "off"
+  }
 }

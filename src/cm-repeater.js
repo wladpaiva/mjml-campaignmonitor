@@ -1,11 +1,9 @@
-import { registerDependencies } from 'mjml-validator'
-import { BodyComponent } from 'mjml-core'
+import {registerDependencies} from 'mjml-validator'
+import {BodyComponent} from 'mjml-core'
 
 registerDependencies({
-  // Tell the validator which tags are allowed as our component's parent
   'mj-body': ['cm-repeater'],
   'mj-column': ['cm-repeater'],
-  // Tell the validator which tags are allowed as our component's children
   'cm-repeater': [
     'mj-section',
     'mj-accordion',

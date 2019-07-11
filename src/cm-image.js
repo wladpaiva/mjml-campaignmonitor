@@ -1,19 +1,15 @@
-import { registerDependencies } from 'mjml-validator'
-import { BodyComponent } from 'mjml-core'
+import {registerDependencies} from 'mjml-validator'
+import {BodyComponent} from 'mjml-core'
 import min from 'lodash/min'
 import widthParser from 'mjml-core/lib/helpers/widthParser'
 
 registerDependencies({
-  // Tell the validator which tags are allowed as our component's parent
   'mj-hero': ['cm-image'],
   'mj-column': ['cm-image'],
-  // Tell the validator which tags are allowed as our component's children
   'cm-image': [],
 })
 
-export default class CmImage extends BodyComponent {
-  static tagOmission = true
-
+class CmImage extends BodyComponent {
   static allowedAttributes = {
     label: 'string',
     editable: 'string',
@@ -59,7 +55,7 @@ export default class CmImage extends BodyComponent {
     const width = this.getContentWidth()
     const fullWidth = this.getAttribute('full-width') === 'full-width'
 
-    const { parsedWidth, unit } = widthParser(width)
+    const {parsedWidth, unit} = widthParser(width)
 
     return {
       img: {
@@ -95,7 +91,7 @@ export default class CmImage extends BodyComponent {
       ? parseInt(this.getAttribute('width'), 10)
       : Infinity
 
-    const { box } = this.getBoxWidths()
+    const {box} = this.getBoxWidths()
 
     return min([box, width])
   }
@@ -194,3 +190,5 @@ export default class CmImage extends BodyComponent {
       `
   }
 }
+
+export default CmImage

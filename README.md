@@ -1,13 +1,13 @@
 # mjml-campaignmonitor for [MJML](https://mjml.io/)
 
-This project is intent to provide support for the Campaign Monitor custom tags on the MJML.
+This project is intent to provide support for the Campaign Monitor custom tags
+on the MJML.
 
 List of components:
 
-* cm-repeater
-* cm-layout
-* cm-image
-
+- cm-repeater
+- cm-layout
+- cm-image
 
 ## Setup
 
@@ -15,8 +15,7 @@ List of components:
 yarn add mjml-campaignmonitor
 ```
 
-
-## Usage 
+## Usage
 
 ```html
 <mjml>
@@ -34,18 +33,18 @@ yarn add mjml-campaignmonitor
 </mjml>
 ```
 
-
-
 ##### Documentation
 
-All components have the same attributes as the [campaign monitor document](https://www.campaignmonitor.com/create/editable-content/) describe.
+All components have the same attributes as the
+[campaign monitor document](https://www.campaignmonitor.com/create/editable-content/)
+describe.
 
-*cm-image*:
+_cm-image_:
 
-| attribute                        | description                             | default value  |
-| -------------------------------- | --------------------------------------- | -------------- |
-| disable-importing                | replace `cm_dontimportimage` attribute  | false          |
-| disable-tracking                 | replace `cm_dontconvertlink` attribute  | false          |
-| editable                         | replace `editable` attribute            | true           |
-| placeholder                      | use an placeholder image                | false          |
-| ...any other mj-image attribute  |                                         |                |
+| attribute                       | description                            | default value |
+| ------------------------------- | -------------------------------------- | ------------- |
+| disable-importing               | replace `cm_dontimportimage` attribute | false         |
+| disable-tracking                | replace `cm_dontconvertlink` attribute | false         |
+| editable                        | replace `editable` attribute           | true          |
+| placeholder                     | use an placeholder image               | false         |
+| ...any other mj-image attribute |                                        |               |
