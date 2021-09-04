@@ -130,7 +130,6 @@ class CmImage extends BodyComponent {
             width: this.getContentWidth(),
             editable: this.getAttribute('editable') === 'true' || null,
             cm_dontimportimage: this.getAttribute('disable-importing'),
-            cm_dontconvertlink: this.getAttribute('disable-tracking'),
           })}
         />
       `
@@ -143,6 +142,7 @@ class CmImage extends BodyComponent {
               target: this.getAttribute('target'),
               rel: this.getAttribute('rel'),
               name: this.getAttribute('name'),
+              cm_dontconvertlink: this.getAttribute('disable-tracking'),
             })}
           >
             ${img}

@@ -48,3 +48,5 @@ _cm-image_:
 | editable                        | replace `editable` attribute           | true          |
 | placeholder                     | use an placeholder image               | false         |
 | ...any other mj-image attribute |                                        |               |
+
+This is a test.
